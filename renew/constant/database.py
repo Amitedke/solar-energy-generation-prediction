@@ -1,2 +1,2 @@
 DATABASE_NAME = "renew"
-COLLECTION_NAME = "energy"
+COLLECTION_NAME = "solar"

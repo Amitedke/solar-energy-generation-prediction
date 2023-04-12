@@ -1,2 +1,8 @@
+scikit-learn
+numpy
+pandas
+matplotlib
+typing
+seaborn
 pymongo[srv] == 4.2.0
 -e .
