@@ -1,8 +1,10 @@
 scikit-learn
 numpy
-pandas
+pandas==2.0.0
 matplotlib
 typing
 seaborn
 pymongo[srv] == 4.2.0
--e .
+pyyaml
+scipy==1.10.1
+#-e .

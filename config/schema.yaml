@@ -1,0 +1,46 @@
+columns:
+- class : category
+- Timestamp : str
+- Temperature : float
+- Dew Point : float
+- Surface Albedo : float
+- Pressure : int
+- Wind Direction : int
+- Wind Speed : float
+- Clearsky DHI : int
+- Clearsky DNI : int
+- Clearsky GHI : int
+- Fill Flag : int
+- Ozone : float
+- Cloud Type : int
+- Solar Zenith Angle : float
+- Precipitable Water : float
+- Relative Humidity : float
+
+
+numerical_columns: 
+- Temperature
+- Dew Point
+- Surface Albedo
+- Pressure
+- Wind Direction
+- Wind Speed
+- Clearsky DHI
+- Clearsky DNI
+- Clearsky GHI
+- Fill Flag
+- Ozone
+- Cloud Type
+- Solar Zenith Angle
+- Precipitable Water
+- Relative Humidity
+
+categorical_columns:
+- Timestamp
+
+drop_columns:
+- _id
+
+
+
+
