@@ -1,1 +1,1 @@
-MONGODB_URL_KEY = 'aa'
+MONGODB_URL_KEY = 'mongodb+srv://amitedke:amitedke@cluster0.ubfttxy.mongodb.net/test'

@@ -10,7 +10,7 @@ class MongodbClient:
 
     def __init__(self, database_name=DATABASE_NAME) -> None:
         if MongodbClient.client is None:
-            mongo_db_url ='aa'
+            mongo_db_url ="mongodb_url"
             if mongo_db_url is None:
                 raise Exception(f"Environment key: {MONGODB_URL_KEY} is not set.")
             MongodbClient.client = pymongo.MongoClient(mongo_db_url, tlsCAFile=ca)

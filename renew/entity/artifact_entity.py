@@ -14,3 +14,45 @@ class DataValidationArtifect:
     invalid_train_file_path : str
     invalid_test_file_path : str
     drift_report_file_path : str
+
+
+
+
+@dataclass
+class DataTransformationArtifact:
+    transformed_object_file_path: str
+    transformed_train_file_path: str
+    transformed_test_file_path: str
+
+
+@dataclass
+class RegressionArtifact:
+    r2_score : float
+    rms: float
+
+
+
+@dataclass
+class ModelTrainerArtifact:
+    trained_model_file_path: str
+    train_metric_artifact: RegressionArtifact
+    test_metric_artifact: RegressionArtifact
+
+
+
+
+@dataclass
+class ModelEvaluationArtifact:
+    is_model_accepted: bool
+    improved_accuracy: float
+    best_model_path: str
+    trained_model_path: str
+    train_model_metric_artifact: RegressionArtifact
+    best_model_metric_artifact: RegressionArtifact
+
+
+@dataclass
+class ModelPusherArtifact:
+    saved_model_path:str
+    model_file_path:str
+
